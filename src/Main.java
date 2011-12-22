@@ -25,7 +25,7 @@ public class Main {
 			try {
 				command = bufferedReader.readLine();
 			} catch (IOException exception) {
-				System.out.println(exception.getMessage());
+				System.out.println(exception);
 			}
 			System.out.println("your command was: " + command);
 			if(!command.equals(null))
@@ -49,7 +49,7 @@ public class Main {
 				System.out.println("The answer is: " + answer);
 				System.out.println("The answer took " + (end.getTime() - start.getTime()) + " milliseconds to process");
 			} catch (Exception exception) {
-				System.out.println(exception.getMessage());
+				System.out.println(exception);
 				break;
 			}
 		}
